@@ -139,81 +139,86 @@ export default function Dashboard() {
         "Filter tasks (all, active, completed)",
         "Clean user interface"
       ]
-    },
-    {
-      id: 'weather-dashboard',
-      title: "Weather Dashboard",
-      description: "Create a weather app using external APIs and geolocation",
-      level: 2,
-      points: 200,
-      technologies: ["React", "APIs", "CSS"],
-      difficulty: "Intermediate",
-      estimatedTime: "4-5 hours",
-      requirements: [
-        "Current weather display",
-        "5-day forecast",
-        "Search by city name",
-        "Geolocation support",
-        "Weather icons and animations"
-      ]
-    },
-    {
-      id: 'ecommerce-page',
-      title: "E-commerce Product Page",
-      description: "Build a complete product page with cart functionality",
-      level: 2,
-      points: 250,
-      technologies: ["React", "State Management", "CSS"],
-      difficulty: "Intermediate",
-      estimatedTime: "5-6 hours",
-      requirements: [
-        "Product gallery with image zoom",
-        "Add to cart functionality",
-        "Shopping cart sidebar",
-        "Product variants (size, color)",
-        "Responsive design"
-      ]
-    },
-    {
-      id: 'blog-platform',
-      title: "Full-Stack Blog Platform",
-      description: "Create a complete blog with authentication and database",
-      level: 3,
-      points: 400,
-      technologies: ["Next.js", "Database", "Auth"],
-      difficulty: "Advanced",
-      estimatedTime: "8-10 hours",
-      requirements: [
-        "User authentication",
-        "Create, edit, delete posts",
-        "Comment system",
-        "Search functionality",
-        "Admin panel"
-      ]
     }
-  ];
+    ];
+  //   {
+  //     id: 'weather-dashboard',
+  //     title: "Weather Dashboard",
+  //     description: "Create a weather app using external APIs and geolocation",
+  //     level: 2,
+  //     points: 200,
+  //     technologies: ["React", "APIs", "CSS"],
+  //     difficulty: "Intermediate",
+  //     estimatedTime: "4-5 hours",
+  //     requirements: [
+  //       "Current weather display",
+  //       "5-day forecast",
+  //       "Search by city name",
+  //       "Geolocation support",
+  //       "Weather icons and animations"
+  //     ]
+  //   },
+  //   {
+  //     id: 'ecommerce-page',
+  //     title: "E-commerce Product Page",
+  //     description: "Build a complete product page with cart functionality",
+  //     level: 2,
+  //     points: 250,
+  //     technologies: ["React", "State Management", "CSS"],
+  //     difficulty: "Intermediate",
+  //     estimatedTime: "5-6 hours",
+  //     requirements: [
+  //       "Product gallery with image zoom",
+  //       "Add to cart functionality",
+  //       "Shopping cart sidebar",
+  //       "Product variants (size, color)",
+  //       "Responsive design"
+  //     ]
+  //   },
+  //   {
+  //     id: 'blog-platform',
+  //     title: "Full-Stack Blog Platform",
+  //     description: "Create a complete blog with authentication and database",
+  //     level: 3,
+  //     points: 400,
+  //     technologies: ["Next.js", "Database", "Auth"],
+  //     difficulty: "Advanced",
+  //     estimatedTime: "8-10 hours",
+  //     requirements: [
+  //       "User authentication",
+  //       "Create, edit, delete posts",
+  //       "Comment system",
+  //       "Search functionality",
+  //       "Admin panel"
+  //     ]
+  //   }
+  // ];
 
   const getChallengeStatus = (challengeId) => {
-   
-    const submission = userProfile.submissions?.find(sub => sub.challengeId === challengeId);
-    
-    if (submission) {
-      return submission.status; 
-    }
-    
-    if (userProfile.completedChallenges?.includes(challengeId)) {
-      return 'completed';
-    }
-    
-    const challenge = challenges.find(c => c.id === challengeId);
-    if (!challenge) return 'locked';
-    
-    if (challenge.level <= userProfile.level) {
-      return 'available';
-    }
-    
-    return 'locked';
-  };
+  
+  const challenge = challenges.find(c => c.id === challengeId);
+  if (challenge?.status) {
+    return challenge.status; 
+  }
+  
+  const submission = userProfile.submissions?.find(sub => sub.challengeId === challengeId);
+  
+  if (submission) {
+    return submission.status; 
+  }
+  
+  if (userProfile.completedChallenges?.includes(challengeId)) {
+    return 'completed';
+  }
+  
+  if (!challenge) return 'locked';
+  
+  if (challenge.level <= userProfile.level) {
+    return 'available';
+  }
+  
+  return 'locked';
+};
 
   const getStatusColor = (status) => {
     switch (status) {
