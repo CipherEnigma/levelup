@@ -132,6 +132,7 @@ export default function Dashboard() {
       technologies: ["React", "JavaScript", "CSS"],
       difficulty: "Beginner",
       estimatedTime: "3-4 hours",
+      status:'locked',
       requirements: [
         "Add, edit, and delete tasks",
         "Mark tasks as complete/incomplete",
