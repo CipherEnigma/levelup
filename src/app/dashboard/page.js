@@ -115,6 +115,7 @@ export default function Dashboard() {
       technologies: ["HTML", "CSS", "JavaScript"],
       difficulty: "Beginner",
       estimatedTime: "2-3 hours",
+      status:'locked',
       requirements: [
         "Responsive design that works on mobile and desktop",
         "Clean, professional styling",
@@ -132,7 +133,6 @@ export default function Dashboard() {
       technologies: ["React", "JavaScript", "CSS"],
       difficulty: "Beginner",
       estimatedTime: "3-4 hours",
-      status:'locked',
       requirements: [
         "Add, edit, and delete tasks",
         "Mark tasks as complete/incomplete",
