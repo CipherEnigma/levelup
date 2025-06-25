@@ -211,6 +211,7 @@ export default function Dashboard() {
   if (userProfile.completedChallenges?.includes(challengeId)) {
     return 'completed';
   }
+  }
   
  
 
