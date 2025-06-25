@@ -213,13 +213,7 @@ export default function Dashboard() {
   }
   
  
-  
-  if (challenge.level <= userProfile.level) {
-    return 'available';
-  }
-  
-  return 'locked';
-};
+
 
   const getStatusColor = (status) => {
     switch (status) {
