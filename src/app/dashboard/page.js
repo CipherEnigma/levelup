@@ -115,7 +115,6 @@ export default function Dashboard() {
       technologies: ["HTML", "CSS", "JavaScript"],
       difficulty: "Beginner",
       estimatedTime: "2-3 hours",
-      status:'locked',
       requirements: [
         "Responsive design that works on mobile and desktop",
         "Clean, professional styling",
@@ -141,24 +140,25 @@ export default function Dashboard() {
         "Clean user interface"
       ]
     }
-    ];
-  //   {
-  //     id: 'weather-dashboard',
-  //     title: "Weather Dashboard",
-  //     description: "Create a weather app using external APIs and geolocation",
-  //     level: 2,
-  //     points: 200,
-  //     technologies: ["React", "APIs", "CSS"],
-  //     difficulty: "Intermediate",
-  //     estimatedTime: "4-5 hours",
-  //     requirements: [
-  //       "Current weather display",
-  //       "5-day forecast",
-  //       "Search by city name",
-  //       "Geolocation support",
-  //       "Weather icons and animations"
-  //     ]
-  //   },
+    
+    {
+      id: 'weather-dashboard',
+      title: "Weather Dashboard",
+      description: "Create a weather app using external APIs and geolocation",
+      level: 2,
+      points: 200,
+      technologies: ["React", "APIs", "CSS"],
+      difficulty: "Intermediate",
+      estimatedTime: "4-5 hours",
+      requirements: [
+        "Current weather display",
+        "5-day forecast",
+        "Search by city name",
+        "Geolocation support",
+        "Weather icons and animations"
+      ]
+    }
+   ];
   //   {
   //     id: 'ecommerce-page',
   //     title: "E-commerce Product Page",
