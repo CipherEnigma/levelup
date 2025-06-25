@@ -195,25 +195,24 @@ export default function Dashboard() {
   //   }
   // ];
 
-  const getChallengeStatus = (challengeId) => {
-  
+const getChallengeStatus = (challengeId) => {
   const challenge = challenges.find(c => c.id === challengeId);
   if (challenge?.status) {
     return challenge.status; 
   }
-  
+
   const submission = userProfile.submissions?.find(sub => sub.challengeId === challengeId);
-  
   if (submission) {
     return submission.status; 
   }
-  
+
   if (userProfile.completedChallenges?.includes(challengeId)) {
     return 'completed';
   }
-  }
-  
- 
+
+  return 'Not Started'; 
+}
+
 
 
   const getStatusColor = (status) => {
