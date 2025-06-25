@@ -146,7 +146,7 @@ export default function Dashboard() {
       title: "Weather Dashboard",
       description: "Create a weather app using external APIs and geolocation",
       level: 2,
-      points: 200,
+      points: 100,
       technologies: ["React", "APIs", "CSS"],
       difficulty: "Intermediate",
       estimatedTime: "4-5 hours",
@@ -212,7 +212,7 @@ export default function Dashboard() {
     return 'completed';
   }
   
-  if (!challenge) return 'locked';
+ 
   
   if (challenge.level <= userProfile.level) {
     return 'available';
