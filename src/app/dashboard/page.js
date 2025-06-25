@@ -139,7 +139,7 @@ export default function Dashboard() {
         "Filter tasks (all, active, completed)",
         "Clean user interface"
       ]
-    }
+    },
     
     {
       id: 'weather-dashboard',
