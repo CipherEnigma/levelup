@@ -157,25 +157,26 @@ export default function Dashboard() {
         "Geolocation support",
         "Weather icons and animations"
       ]
+    },
+   
+    {
+      id: 'ecommerce-page',
+      title: "E-commerce Product Page",
+      description: "Build a complete product page with cart functionality",
+      level: 2,
+      points: 250,
+      technologies: ["React", "State Management", "CSS"],
+      difficulty: "Intermediate",
+      estimatedTime: "5-6 hours",
+      requirements: [
+        "Product gallery with image zoom",
+        "Add to cart functionality",
+        "Shopping cart sidebar",
+        "Product variants (size, color)",
+        "Responsive design"
+      ]
     }
-   ];
-  //   {
-  //     id: 'ecommerce-page',
-  //     title: "E-commerce Product Page",
-  //     description: "Build a complete product page with cart functionality",
-  //     level: 2,
-  //     points: 250,
-  //     technologies: ["React", "State Management", "CSS"],
-  //     difficulty: "Intermediate",
-  //     estimatedTime: "5-6 hours",
-  //     requirements: [
-  //       "Product gallery with image zoom",
-  //       "Add to cart functionality",
-  //       "Shopping cart sidebar",
-  //       "Product variants (size, color)",
-  //       "Responsive design"
-  //     ]
-  //   },
+    ];
   //   {
   //     id: 'blog-platform',
   //     title: "Full-Stack Blog Platform",
