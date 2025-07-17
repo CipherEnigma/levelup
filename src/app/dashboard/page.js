@@ -175,7 +175,7 @@ export default function Dashboard() {
         "Product variants (size, color)",
         "Responsive design"
       ]
-    }
+    },
     
     {
       id: 'blog-platform',
