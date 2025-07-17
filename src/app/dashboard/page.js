@@ -176,25 +176,25 @@ export default function Dashboard() {
         "Responsive design"
       ]
     }
-    ];
-  //   {
-  //     id: 'blog-platform',
-  //     title: "Full-Stack Blog Platform",
-  //     description: "Create a complete blog with authentication and database",
-  //     level: 3,
-  //     points: 400,
-  //     technologies: ["Next.js", "Database", "Auth"],
-  //     difficulty: "Advanced",
-  //     estimatedTime: "8-10 hours",
-  //     requirements: [
-  //       "User authentication",
-  //       "Create, edit, delete posts",
-  //       "Comment system",
-  //       "Search functionality",
-  //       "Admin panel"
-  //     ]
-  //   }
-  // ];
+    
+    {
+      id: 'blog-platform',
+      title: "Full-Stack Blog Platform",
+      description: "Create a complete blog with authentication and database",
+      level: 3,
+      points: 100,
+      technologies: ["Next.js", "Database", "Auth"],
+      difficulty: "Advanced",
+      estimatedTime: "8-10 hours",
+      requirements: [
+        "User authentication",
+        "Create, edit, delete posts",
+        "Comment system",
+        "Search functionality",
+        "Admin panel"
+      ]
+    }
+  ];
 
 const getChallengeStatus = (challengeId) => {
  
