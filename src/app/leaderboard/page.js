@@ -27,7 +27,7 @@ export default function Leaderboard() {
     { 
       rank: 2, 
       name: "Shree Gattani", 
-      points: 310, 
+      points: 335, 
       level: "Frontend", 
       projects: 4,
       avatar: "SG",
