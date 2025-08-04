@@ -201,7 +201,6 @@ export default function Leaderboard() {
       institution: "SNU",
     },
   ];
-  ];
 
   const filteredData = selectedFilter === 'all' 
     ? leaderboardData 
